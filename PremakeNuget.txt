@@ -1,0 +1,8 @@
+	nugetsource "https://api.nuget.org/v3/index.json"
+
+
+	nuget 
+	{ 
+		"Allegro:5.2.6",
+		"AllegroDeps:1.11.0"
+	}

@@ -21,6 +21,15 @@ project "Engine"
 	pchheader "engpch.h"
 	pchsource "Engine/src/engpch.cpp"
 
+	nugetsource "https://api.nuget.org/v3/index.json"
+
+	nuget 
+	{ 
+		"Allegro:5.2.6",
+		"AllegroDeps:1.11.0"
+	}
+
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -29,7 +38,7 @@ project "Engine"
 
 	includedirs
 	{
-		"%{prj.name}/src",	
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
@@ -69,6 +78,14 @@ project "Project-Space"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	nugetsource "https://api.nuget.org/v3/index.json"
+
+	nuget 
+	{ 
+		"Allegro:5.2.6",
+		"AllegroDeps:1.11.0"
+	}
 
 	files
 	{

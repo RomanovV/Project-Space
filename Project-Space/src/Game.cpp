@@ -1,13 +1,13 @@
 #include <Engine.h>
 
-class Sandbox : public Engine::Application
+class Game : public Engine::Application
 {
 public:
-	Sandbox()
+	Game()
 	{
 
 	}
-	~Sandbox()
+	~Game()
 	{
 
 	}
@@ -15,5 +15,5 @@ public:
 
 Engine::Application* Engine::CreateApplication()
 {
-	return new Sandbox();
+	return new Game();
 }
